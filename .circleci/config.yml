@@ -17,6 +17,12 @@ jobs:
       - run:
           name: "Which node"
           command: which node
+      - run:
+          name: "Remove NVM"
+          command: brew uninstall — force nvm
+      - run:
+          name: "Which node"
+          command: which node
       # - run:
       #     name: "Install node"
       #     command: "brew install node"
