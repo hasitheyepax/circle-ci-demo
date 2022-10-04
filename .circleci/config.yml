@@ -41,10 +41,8 @@ jobs:
 workflows:
   build-artifacts-workflow:
     jobs:
-      - dependencies
-
-general:
-  branches:
-    only:
-      # - master # list of branches to build
-      - /release\/* # or regexes
+      - dependencies:
+          filters:
+            branches:
+              only:
+                - /release\/*
