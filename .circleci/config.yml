@@ -20,9 +20,9 @@ jobs:
       - run:
           name: "Which node"
           command: which node
-      # - run:
-      #     name: "Remove NVM"
-      #     command: brew uninstall nvm
+      - run:
+          name: "This is a feature!"
+          command: echo Feature
       # - run:
       #     name: "Install node via Homebrew"
       #     command: brew install node
