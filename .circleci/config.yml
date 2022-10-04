@@ -18,6 +18,9 @@ jobs:
           name: "Hello there!"
           command: echo "Hello There!"
       - run:
+          name: "Hello there again!"
+          command: echo "Hello There!"
+      - run:
           name: "Which node"
           command: which node
       - run:
