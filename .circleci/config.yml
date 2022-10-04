@@ -15,6 +15,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: "Hello there!"
+          command: echo "Hello There!"
+      - run:
           name: "Which node"
           command: which node
       # - run:
@@ -39,3 +42,9 @@ workflows:
   build-artifacts-workflow:
     jobs:
       - dependencies
+
+general:
+  branches:
+    only:
+      - master # list of branches to build
+      - /release\/* # or regexes
