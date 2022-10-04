@@ -15,6 +15,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: "Hello there!"
+          command: echo "Hello There!"
+      - run:
           name: "Which node"
           command: which node
       - run:
