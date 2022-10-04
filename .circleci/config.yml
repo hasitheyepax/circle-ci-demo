@@ -24,8 +24,8 @@ jobs:
           name: "Which node"
           command: which node
       - run:
-          name: "This is a feature!"
-          command: echo Feature
+          name: "Yosemite Sam!"
+          command: echo Howdy
       # - run:
       #     name: "Install node via Homebrew"
       #     command: brew install node
